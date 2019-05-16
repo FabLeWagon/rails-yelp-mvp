@@ -1,0 +1,9 @@
+<div class="container">
+  <%= simple_form_for [@restaurants, @reviews] do |t| %>
+    <%= t.label :content %>
+    <%= t.text_field :content %>
+    <%= t.label :rating  %>
+    <%= t.text_field :rating %>
+    <%= t.submit "Add Review" %>
+  <% end %>
+</div>
